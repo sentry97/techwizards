@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		TECH WIZARD
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=2">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+	<style>
+    /* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #00008B;
+  color: blue;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #000000;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+  </style>
+ 
+  <div class="topnav" align="right" width="100%">
+    <a href="Blessed Cafe.html">
+      <img src="D:\USER\Pictures\New folder (2)\download (2).jfif" height="50dp" width="50dp" align="left" >    
+    </a>   
+    
+     <a class="active" href="Tech Wizards.html">Home</a>  
+     <a href="Categories.html">Categories</a>
+      <a href="About Us.html">About Us</a>
+     
+      <a href="Contact.html">Contact Us</a>
+</div><br><br>
+
+	<P>welcome to tech wizards where we display various computer devices such as laptops, USB drives, Hard disks, computer screens and so on.</P>
+
+	<div class="row">
+  <div class="column">
+    <img src="D:\USER\Pictures\New folder (2)\download (2).jfif" alt="Tech" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:\USER\Pictures\New folder (2)\download.jfif" alt="Artificial Intelligence" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:\USER\Pictures\New folder (2)\images.jfif" alt="Smart Devices" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:\USER\Pictures\New folder (2)\images (1).jfif" alt="AI" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="D:\USER\Pictures\New folder (2)\images (2).jfif" alt="Laptop" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:\USER\Pictures\New folder (2)\images (3).jfif" alt="Network" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:\USER\Pictures\New folder (2)\images (4).jfif" alt="PC" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="D:\USER\Pictures\New folder (2)\download.jfif" alt="Artificial Intelligence" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script><br>
+
+<table width="100%" cellpadding="2" >
+  <thead>
+    <th align="left"><font size="5sp">Links</font></th>
+    <th align="center"><font size="5sp">Our Contacts</font></th>
+    <th align="right"><font size="5sp">Social Media</font></th>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left"><li><a href="Tech Wizards.html">Home</a></li></td>
+      <td align="center">CBD, Nairobi</td>
+      <td align="right"><a href="https://web.facebook.com/?_rdc=1&_rdr">Facebook</a></td>
+    </tr>
+    <tr>
+      <td align="left"><li><a href="Categories.html">Categories</a></li></td>
+      <td align="center">+254723568974</td>
+      <td align="right"><a href="https://www.instagram.com/">Instagram</a></td>
+    </tr>
+    <tr>
+      <td align="left"> <li><a href="About Us.html">About Us</li></td>
+      <td align="center">techwizards@gmail.com</td>
+      <td align="right"><a href="https://twitter.com/">Twitter</a></td>
+    </tr>
+    <tr>
+      <td align="left"><li><a href="Contact.html">Contact us</a></li></td>
+      <td align="center"></td>
+      <td align="right"><a href="https://web.telegram.org/k/">Telegram</a></td>
+    </tr>    
+  </tbody> 
+</table>
+
+
+</body>
+</html>
